@@ -3,9 +3,9 @@ import { List } from "./_components/list";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Lingo | Courses",
+  title: "Countie!  | Courses",
   description:
-    "Learn a new language with Lingo. Choose from a variety of languages and start learning today.",
+    "Learn math with Countie! . Choose from a variety of levels and start learning today.",
 };
 
 const CoursesPage = async () => {
@@ -19,7 +19,7 @@ const CoursesPage = async () => {
 
   return (
     <div className="mx-auto h-full max-w-[912px] px-3">
-      <h1 className="text-2xl font-bold text-neutral-700">Language Courses</h1>
+      <h1 className="text-2xl font-bold text-neutral-700">Courses</h1>
       <List courses={courses} activreCourseId={userProgress?.activeCourseId} />
     </div>
   );
